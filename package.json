@@ -2,13 +2,12 @@
   "name": "react-hws",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://p1st-0n.github.io/react-hw01-components/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "eslint": "^8.35.0",
     "modern-normalize": "^1.1.0",
-    "prettier": "^2.8.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:js": "eslint src/**/*.{js,jsx}"
+    "lint:js": "eslint src/**/*.{js,jsx}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.4"
   }
 }
